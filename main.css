@@ -6,12 +6,17 @@
     flex-wrap: wrap;
 }
 
-.button {
+.button,
+#equal,
+#clear
+{
     height:100px;
     width: 100px;
     margin: 0px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 204, 255);
+    justify-content: center;
+    align-items: center;
 }
 
 .display {
@@ -35,7 +40,9 @@
 .operation {
 
 }
-button:hover {
+button:hover,
+#equal:hover,
+#clear:hover {
     background-color: white;
 }
 /* .highlight {
