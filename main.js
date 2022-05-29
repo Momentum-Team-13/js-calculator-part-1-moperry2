@@ -5,7 +5,8 @@ console.log( buttons )
 let result = ""
 
 let display = document.querySelector(".display"); 
-let equalsbutton = document.querySelector("#equal")
+let equalsbutton = document.querySelector("#equal");
+let clearbutton = document.querySelector("#clear");
 console.log(display)
 
 
@@ -22,10 +23,13 @@ for (let button of buttons) {
         display.textContent=calcresult
     } );
 
-    
+    clearbutton.addEventListener("click",function (){
+        event.target.id === "clear"
+        display.textContent=""
+    } );
 
-     //   event.target.classList.remove("unhighlight");
-   //   event.target.classList.add("highlight");
+//        event.target.classList.remove("unhighlight");
+//      event.target.classList.add("highlight");
 //     });
 // }
 // function display() {
